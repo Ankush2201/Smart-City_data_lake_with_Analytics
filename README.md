@@ -97,7 +97,10 @@ This diagram illustrates how data flows through the system—from raw data inges
 
    ![image](https://github.com/user-attachments/assets/c2d6ddb0-3f74-475a-add2-468e60a2fcc2)
 
-   
+   6. depolyement diagram :
+    
+   ![image](https://github.com/user-attachments/assets/470613b8-0591-4a3c-b7b0-8b82c338cd13)
+
    
 ## Modules and File Descriptions
 
