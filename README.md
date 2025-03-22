@@ -76,7 +76,7 @@ This diagram illustrates how data flows through the system—from raw data inges
 
 ---
 
-# indepth architecture:
+# InDepth architecture:
    1.system design:
 
    ![image](https://github.com/user-attachments/assets/ef12ae98-e9c0-4b2f-a54f-773eb8386300)
@@ -88,6 +88,10 @@ This diagram illustrates how data flows through the system—from raw data inges
    3. system workflow:
 
    ![image](https://github.com/user-attachments/assets/e32a2e57-030d-40df-82bc-9e472de9ddb5)
+
+   4. class diagram:
+
+   ![image](https://github.com/user-attachments/assets/a5d142d4-7782-41f5-8461-a368548340ab)
    
    
 ## Modules and File Descriptions
