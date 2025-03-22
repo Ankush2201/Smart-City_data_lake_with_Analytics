@@ -85,6 +85,10 @@ This diagram illustrates how data flows through the system—from raw data inges
    
    ![image](https://github.com/user-attachments/assets/3f97b084-03df-4163-aabc-ef7b32495361)
 
+   3. system workflow:
+
+   ![image](https://github.com/user-attachments/assets/e32a2e57-030d-40df-82bc-9e472de9ddb5)
+   
    
 ## Modules and File Descriptions
 
