@@ -92,6 +92,11 @@ This diagram illustrates how data flows through the system—from raw data inges
    4. class diagram:
 
    ![image](https://github.com/user-attachments/assets/a5d142d4-7782-41f5-8461-a368548340ab)
+
+   5.activity diagram:
+
+   ![image](https://github.com/user-attachments/assets/c2d6ddb0-3f74-475a-add2-468e60a2fcc2)
+
    
    
 ## Modules and File Descriptions
