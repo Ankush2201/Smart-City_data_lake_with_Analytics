@@ -80,6 +80,11 @@ This diagram illustrates how data flows through the system—from raw data inges
    1.system design:
 
    ![image](https://github.com/user-attachments/assets/ef12ae98-e9c0-4b2f-a54f-773eb8386300)
+
+   2.component diagram:
+   
+   ![image](https://github.com/user-attachments/assets/3f97b084-03df-4163-aabc-ef7b32495361)
+
    
 ## Modules and File Descriptions
 
