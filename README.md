@@ -1,4 +1,3 @@
-Below is an example of an in-depth README for the entire project. You can save it as `README.md` at the root of your project directory.
 
 ---
 
@@ -289,6 +288,3 @@ This project is licensed under the [MIT License](LICENSE). Please refer to the L
 
 ---
 
-This README provides a comprehensive understanding of the project, from its architecture and individual modules to setup, usage, and potential future improvements. It is designed to be both a practical guide for developers and a conceptual overview for stakeholders interested in the smart city analytics framework.
-
-Feel free to adjust or expand upon any section to better suit your deployment or presentation needs!
