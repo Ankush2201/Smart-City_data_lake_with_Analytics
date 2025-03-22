@@ -1,0 +1,23 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+
+# Ignore build or dist folders
+dist/
+build/
+
+# Ignore OS or editor-specific files
+.DS_Store
+*.log
+.vscode/
+.idea/
+myenv/
+
+
+

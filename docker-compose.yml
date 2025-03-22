@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: bitnami/zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka-net
+
+  kafka:
+    image: wurstmeister/kafka:latest
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: INSIDE_KAFKA://0.0.0.0:9093,OUTSIDE_KAFKA://0.0.0.0:9094
+      KAFKA_ADVERTISED_LISTENERS: INSIDE_KAFKA://kafka:9093,OUTSIDE_KAFKA://localhost:9094
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE_KAFKA:PLAINTEXT,OUTSIDE_KAFKA:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE_KAFKA
+    ports:
+      - "9094:9094"
+    depends_on:
+      - zookeeper
+    networks:
+      - kafka-net
+
+  # Kafka Producer service
+  producer:
+    build: ./streaming
+    command: python producer.py
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  # Kafka Consumer service
+  consumer:
+    build: ./streaming
+    command: python consumer.py
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+networks:
+  kafka-net:
+    driver: bridge
